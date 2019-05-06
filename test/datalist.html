@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>datalist元素学习</title>
+</head>
+<body>
+    <!-- 表单 -->
+    <form action="#">
+        <!-- 分组 -->
+        <fieldset>
+            <legerd>请输入职业</legerd>
+            <!-- input输入文本框 -->
+            <input type="text" list="worklist" list="worklist1">
+            <!-- datalist前需要有input文本输入框, 属性值要保持一致-->
+            <datalist id="worklist">
+                <option value="程序开发员"></option>
+                <option value="学生"></option>
+                <option value="系统程序员"></option>
+            </datalist>
+            <legerd>请输入：</legerd>
+            <input type="text" list="worklist1">
+            <datalist id="worklist1">
+                    <option value="第一"></option>
+                    <option value="第二"></option>
+                    <option value="第三"></option>
+                </datalist>
+        </fieldset>
+    </form>
+</body>
+</html>
